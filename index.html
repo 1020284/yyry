@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Open 5 Tabs</title>
+  <title>Trigger Popup Blocker</title>
   <script>
-    function openSites() {
+    window.onload = function() {
+      // Try to open multiple tabs immediately
       for (let i = 0; i < 5; i++) {
         window.open("https://donotuse.pages.dev", "_blank");
       }
-    }
+    };
   </script>
 </head>
 <body>
-  <h2>Popup Permission Needed</h2>
-  <p>Click the button below to acess games</p>
-  <button onclick="openSites()">Allow Popups</button>
+  <p>If your browser blocks popups, you’ll see a message at the top asking to allow them.</p>
 </body>
 </html>
