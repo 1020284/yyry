@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Open Site in New Tab</title>
+  <title>Open 5 Tabs</title>
   <script>
-    window.onload = function() {
-      window.open("https://donotuse.pages.dev", "_blank");
-    };
+    function openSites() {
+      for (let i = 0; i < 5; i++) {
+        window.open("https://donotuse.pages.dev", "_blank");
+      }
+    }
   </script>
 </head>
 <body>
-  <p>Opening donotuse.pages.dev in a new tab...</p>
+  <h2>Popup Permission Needed</h2>
+  <p>Click the button below to acess games</p>
+  <button onclick="openSites()">Allow Popups</button>
 </body>
 </html>
